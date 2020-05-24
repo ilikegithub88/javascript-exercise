@@ -1,1 +1,4 @@
 # javascript-exercise
+
+- lottery
+- tictactoe
