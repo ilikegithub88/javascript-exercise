@@ -34,11 +34,13 @@ function check(whatrecord, whatatt){
         done=true;
     }
     
-    if(atts[0][2].textContent===turn &&
+    if(
+        atts[0][2].textContent===turn &&
         atts[1][1].textContent===turn &&
-        atts[2][0].textContent===turn){
-            done=true;
-        }
+        atts[2][0].textContent===turn
+    ){
+        done=true;
+    }
     return done;
 }
 
