@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" cotent="ie=edge">
+        <title> 날씨 API</title>
+        <link rel="stylesheet" href="weather_style.css">
+        <link rel="stylesheet" href="weather_default.css">
+    </head>
+    <body>
+        <div class="con">
+            <div class="bg">
+                <img src="https://source.unsplash.com/random" style="width:100%; height:120%"></img>
+            </div>
+            <section>
+                <div id="name"></div>
+            </section>
+            <section>
+                <article id="calendar"></article>
+                <article id="clock"></article>
+            </section>
+            <section>
+                <article id="location"></article>
+                <article id="weather"></article>
+                <article id="temp"></article>
+                <article id="maxmin"></article>
+            </section>
+        </div>
+        
+        
+        <script src="weather_name.js"></script>
+        <script src="weather_calendar.js"></script>
+        <script src="weather_api.js"></script>
+    </body>
+</html>

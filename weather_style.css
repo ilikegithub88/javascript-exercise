@@ -1,0 +1,38 @@
+html,body{ width:100%; height:100%; margin:0;  padding:0;}
+
+.con{
+    margin-left:400px;
+    font-size:25px;
+    color:white;
+    text-shadow:1.5px 1.5px black;
+}
+
+#name{
+    margin-top:150px;
+}
+
+#calendar{
+    margin-top:50px;  
+}
+
+#location{
+    margin-top:50px;
+}    
+
+
+
+.submitForm{
+    margin-top:70px;
+    font-size:45px;
+}
+
+.bg{
+    padding:0; 
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+}
+
