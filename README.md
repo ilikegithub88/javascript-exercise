@@ -1,7 +1,7 @@
 # javascript-exercise
 
-- lottery
-- tictactoe
-- rockscissorpaper
-- weather_api
-- card mathcing game
+- lottery (vanilla JS)
+- tictactoe (vanilla JS)
+- rockscissorpaper (vanilla JS)
+- weather_api (vanilla JS)
+- card mathcing game (vanilla JS)
