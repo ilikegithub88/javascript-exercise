@@ -8,7 +8,7 @@ function init(){
 init();
 
 function load(){
-    var name=localStorage.getItem("username1");
+    var name=localStorage.getItem("username");
     if(name===null){
         askForName();
     }else{
@@ -20,9 +20,9 @@ function askForName(){
     var input=document.createElement("input");
     input.type="text";
     input.placeholder="Input your name and press enter key";
-    input.style.width="300px";
+    input.style.width="250px";
     input.style.height="30px";
-    input.style.fontSize="20px";
+    input.style.fontSize="15px";
     var form=document.createElement("form");
     form.setAttribute("class","submitForm");
     form.appendChild(input);
@@ -35,7 +35,7 @@ function submitName(event){
     var form=event.target;
     var x=form.querySelector("input");
     var val=x.value;
-    localStorage.setItem("username1",val);
+    localStorage.setItem("username",val);
     showName(val);
     
 }

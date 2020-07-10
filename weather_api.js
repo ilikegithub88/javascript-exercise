@@ -10,6 +10,7 @@ function load(){
     var location=localStorage.getItem("location");
     if(location===null){
         alert("We would like to let you know weather forecast after you agree to give me your geolocation");
+        askForLocation();
     }else{
         var parsed=JSON.parse(location);
         getWeather(parsed.latitude, parsed.longitude);
