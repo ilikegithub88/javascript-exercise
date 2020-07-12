@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
+
+body{ 
+    background-color:rgb(39, 39, 39);
+     color:white;
+     font-family:'Sunflower', sans-serif;
+    }
+
+.bg{
+    position:absolute;
+    top:150px;
+    left:450px;
+    z-index: -1;
+}
+
+.leftcoin{
+    position:absolute;
+    top:230px;
+    left:30px;
+    z-index:-1;
+}
+
+.rightcoin{
+    position:absolute;
+    top:230px;
+    right:30px;
+    z-index:-1;
+}
+
+div{
+    text-align:center; margin: 0 auto; font-size:25px;
+}
+
+#balls{
+    width:500px; height:550px;
+}
+
+.gold{
+    width:400px; height:450px;
+}

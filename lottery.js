@@ -22,9 +22,10 @@ function 공색칠하기(숫자,결과창){
     공.style.borderRadius='50px';
     공.style.width='50px';
     공.style.height='50px';
+    공.style.lineHeight='53px';
     공.style.textAlign='center';
     공.style.marginRight='50px';   
-    공.style.fontSize='35px';
+    공.style.fontSize='30px';
     공.style.color='black';
     공.style.fontWeight='bold';
     공.className='공';
@@ -58,14 +59,13 @@ for(var i=0; i<당첨숫자들.length; i++){
     setTimeout(function 비동기콜백함수(){
         var 보너스칸=document.querySelector('#보너스');
         공색칠하기(보너스,보너스칸);
-    },7000);//1000밀리초는 1초
+    },7000);
 
     
     setTimeout(function 비동기콜백함수(){
         var 응원칸=document.querySelector('#응원');
         var 메시지=document.createElement('div');
         메시지.textContent='부자 되세요!';
-        메시지.style.fontSize='35px';
         응원칸.appendChild(메시지);
-    },8000);//1000밀리초는 1초
+    },8000);
 
