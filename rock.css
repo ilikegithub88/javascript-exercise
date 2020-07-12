@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+    
+body{
+    font-family:'Single Day', cursive;
+}
+
+button{
+    font-family:'Single Day', cursive;
+}
+#picture{
+    width:280px; height:350px;
+    background-position: 0 0;
+    display: block; margin: 0px auto;
+}
