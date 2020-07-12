@@ -12,3 +12,15 @@ button{
     background-position: 0 0;
     display: block; margin: 0px auto;
 }
+
+#title, #result{
+    text-align: center; font-size:20pt;
+}
+
+.btn{ 
+    font-size: 15pt;
+}
+
+.buttons{
+    text-align:center;
+}
