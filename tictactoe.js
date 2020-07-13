@@ -44,11 +44,11 @@ function check(whatrecord, whatatt){
     return done;
 }
 
-function init(draw){
+function game(draw){
     if(draw){
-        result.textContent='draw';
+        result.textContent='비겼어요';
     }else {
-        result.textContent=turn+' wins!';
+        result.textContent=turn+' 이겼어요!';
     }
 
     setTimeout(function(){
@@ -72,9 +72,9 @@ var async = function(event){
     var whatatt=atts[whatrecord].indexOf(event.target);
 
     if(atts[whatrecord][whatatt].textContent !==''){
-        console.log('it has been occupied');
+        //console.log('it has been occupied');
     }else{ 
-        console.log('it is empty');
+        //console.log('it is empty');
         atts[whatrecord][whatatt].textContent=turn;
         var whether=check(whatrecord,whatatt);
         
@@ -91,9 +91,9 @@ var async = function(event){
 
 
         if(whether){
-            init();
+            game();
         }else if(candidate.length===0){
-            init(true);
+            game(true);
         }else{
             if(turn==='O'){
                 turn='X';
@@ -108,7 +108,7 @@ var async = function(event){
                 var whether=check(whatrecord,whatatt);
                 //when every att is full
                 if(whether){
-                    init();
+                    game();
                 }
                 //give me the next turn
                 turn='O';
@@ -132,7 +132,17 @@ for(var i=1; i<=3; i+=1){
         record.appendChild(att);
     }
     table.appendChild(record);
+    table.style.textAlign="center";
+    table.style.margin="0 auto";
 }
 document.body.appendChild(table);
+var div=document.createElement("div");
+div.style.margin="40px";
+document.body.appendChild(div);
+document.body.appendChild(div);
 document.body.appendChild(result);
+
+result.style.margin="0 auto";
+result.style.textAlign="center";
+result.style.fontSize="15pt";
 

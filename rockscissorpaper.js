@@ -14,9 +14,9 @@ function choiceofcomputer(imageLocation){
 
 
 //가위바위보 그림이 움직이는 함수
-var xinterval;
+var pictureInterval;
 function makeInterval(){
-    xinterval=setInterval(function(){
+    pictureInterval=setInterval(function(){
         if(imageLocation === 가위바위보.가위){
             imageLocation=가위바위보.바위;
         }else if(imageLocation===가위바위보.바위){
@@ -37,10 +37,10 @@ var point={ 가위:1, 바위:0, 보:-1,}
 
 document.querySelectorAll('.btn').forEach(function(btn){
     btn.addEventListener('click',function(){
-        clearInterval(xinterval); //suspend the function setInterval
+        clearInterval(pictureInterval); 
         setTimeout(function(){
             makeInterval();
-        },1000);
+        },1500);
 
         var mychoice=this.textContent;
         var mypoint = point[mychoice];

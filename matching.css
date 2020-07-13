@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
+
+body{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.card{
+    display:inline-block;
+    margin-right:20px;
+    margin-bottom: 20px;
+    width:70px;
+    height:100px;
+    perspective:140px;
+}
+
+.card-inner{
+    position:relative;
+    width:100%; height:100%;
+    text-align:center; transition:transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner{
+    transform:rotateY(180deg);
+}
+
+.card-front{ 
+    background:black; border:5px ridge grey;
+    background-size:70px;}
+
+.card-front, .card-back{
+    position:absolute;
+    width:100%; height:100%;
+    backface-visibility:hidden;
+}
+
+.card-back{
+    transform:rotateY(180deg);
+}

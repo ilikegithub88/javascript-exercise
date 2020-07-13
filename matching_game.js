@@ -44,8 +44,8 @@ function setting(width,length){
                         click=[];
                         if(finish.length===12){
                             var endingTime=new Date();
-                            var answer=prompt((endingTime-startingTime)/1000+'초 걸렸어요. 이름 입력하세요');
-                            record(answer,(endingTime-startingTime)/1000);
+                            alert((endingTime-startingTime)/1000+'초 걸렸어요');
+                            
                             document.querySelector('#pack').innerHTML='';
                             colorCandidates=colors.slice();
                             color=[]; 
@@ -86,21 +86,6 @@ function setting(width,length){
 }
 
 
-
-
-function record(answer,time){
-    
-    localStorage.setItem(`username`,answer);
-    localStorage.setItem(`time`,time);
-    show();    
-}
-
-function show(){
-    var user=localStorage.getItem(`username`);
-    var time=localStorage.getItem(`time`);
-    document.querySelector("#record").textContent=`방금 전 ${user}의 기록: ${time}초`;
-
-}
 
 function init(){
     shuffle();
